@@ -54,7 +54,7 @@ def main():
     """, unsafe_allow_html=True)
     
     # Add text input area with placeholder
-    text_input = st.text_area("", height=200)
+    text_input = st.text_area("Enter text to generate continuation:", height=200)
     
     # Add generate button with custom styling
     st.markdown("<style> .stButton button {background-color: #2a9d8f; color: white;}</style>", unsafe_allow_html=True)
