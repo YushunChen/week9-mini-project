@@ -1,6 +1,9 @@
 # Week 9 Mini Project
 > Oliver Chen (yc557)
 
+## Project URL
+>https://week9-mini-project-7mrumxqdztr3s5ljke4jmt.streamlit.app/
+
 ## Project Introduction
 This project intends to create a website using Streamlit, connect to an open source LLM (Hugging Face), and deploy model via Streamlit  that can be accessed by anyone via browser.
 
