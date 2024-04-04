@@ -33,7 +33,7 @@ def main():
     """, unsafe_allow_html=True)
     
     # Add text input area with placeholder
-    text_input = st.text_area("Enter text to generate continuation:")
+    text_input = st.text_area("", height=200)
     
     # Add generate button with custom styling
     st.markdown("<style> .stButton button {background-color: #2a9d8f; color: white;}</style>", unsafe_allow_html=True)
@@ -55,19 +55,6 @@ def main():
         else:
             # Display warning if no text input
             st.warning("Please enter some text first.")
-    
-    # Add section for example generated text
-    st.markdown("---")
-    st.subheader("Example Generated Text:")
-    examples = [
-        "Once upon a time",
-        "In a galaxy far, far away",
-        "The quick brown fox jumps over the lazy dog"
-    ]
-    for example in examples:
-        st.write(f"**Prompt:** {example}")
-        generated_example = model(example, max_length=50, do_sample=True)[0]['generated_text']
-        st.write(generated_example, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
